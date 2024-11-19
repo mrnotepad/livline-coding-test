@@ -4,6 +4,22 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 
 ## API Reference
 
+#### Create a Task
+
+```http
+  POST /api/tasks/
+
+    {
+        "title": "Task Title",
+        "description": "Task description"
+    }
+```
+
+| Parameter     | Type     | Description                       |
+| :------------ | :------- | :-------------------------------- |
+| `title`       | `String` | **Required**. Title of task       |
+| `description` | `String` | **Optional**. Description of task |
+
 #### Get all Task
 
 ```http
@@ -24,11 +40,17 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 
 ```http
   PUT /api/tasks/${id}
+
+    {
+        "title": "Task Title",
+        "description": "Task description"
+    }
 ```
 
-| Parameter | Type  | Description                       |
-| :-------- | :---- | :-------------------------------- |
-| `id`      | `int` | **Required**. Id of task to fetch |
+| Parameter     | Type     | Description                       |
+| :------------ | :------- | :-------------------------------- |
+| `title`       | `String` | **Required**. Title of task       |
+| `description` | `String` | **Optional**. Description of task |
 
 #### Delete a Task
 
