@@ -9,6 +9,11 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 ```http
   POST /api/tasks/
 
+```
+
+#### Sample json body
+
+```http
     {
         "title": "Task Title",
         "description": "Task description"
@@ -17,8 +22,8 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 
 | Parameter     | Type     | Description                       |
 | :------------ | :------- | :-------------------------------- |
-| `title`       | `String` | **Required**. Title of task       |
-| `description` | `String` | **Optional**. Description of task |
+| `title`       | `string` | **Required**. Title of task       |
+| `description` | `string` | **Optional**. Description of task |
 
 #### Get all Task
 
@@ -40,7 +45,15 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 
 ```http
   PUT /api/tasks/${id}
+```
 
+| Parameter | Type  | Description                        |
+| :-------- | :---- | :--------------------------------- |
+| `id`      | `int` | **Required**. Id of task to update |
+
+#### Sample json body
+
+```http
     {
         "title": "Task Title",
         "description": "Task description"
@@ -49,8 +62,8 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 
 | Parameter     | Type     | Description                       |
 | :------------ | :------- | :-------------------------------- |
-| `title`       | `String` | **Required**. Title of task       |
-| `description` | `String` | **Optional**. Description of task |
+| `title`       | `string` | **Required**. Title of task       |
+| `description` | `string` | **Optional**. Description of task |
 
 #### Delete a Task
 
