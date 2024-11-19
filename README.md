@@ -74,3 +74,16 @@ This project implements a Task Management API using Laravel. It provides CRUD (C
 | Parameter | Type  | Description                       |
 | :-------- | :---- | :-------------------------------- |
 | `id`      | `int` | **Required**. Id of task to fetch |
+
+## Environment Configuration
+
+Before running the application, ensure you configure the .env file with your database credentials. Below is an example configuration for MySQL:
+
+```http
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel   # Replace 'laravel' with your database name
+DB_USERNAME=root      # Replace 'root' with your database username
+DB_PASSWORD=          # Replace with your database password
+```
